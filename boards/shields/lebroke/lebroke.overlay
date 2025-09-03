@@ -11,8 +11,8 @@
 
     kscan0: kscan_composite {
         compatible = "zmk,kscan-composite";
-        rows = <4>;
-        columns = <10>;
+        rows = <16>;
+        columns = <16>;
 
         // Include the charlieplex driver
         charlieplex {
@@ -67,8 +67,8 @@
         rows = <4>; // Length of the "row-gpios" array
         map = <
         // row 0                                        row 2
-        RC(9,7)  RC(7,10) RC(7,11) RC(7,12) RC(7,13)    RC(5,4) RC(5,3) RC(5,2) RC(5,1) RC(5,0)
-	    RC(7,9)  RC(10,7) RC(11,7) RC(12,7) RC(13,7)    RC(4,5) RC(3,5) RC(2,5) RC(1,5) RC(0,5)
+        RC(7,9)  RC(7,10) RC(7,11) RC(7,12) RC(7,13)    RC(5,4) RC(5,3) RC(5,2) RC(5,1) RC(5,0)
+	    RC(9,7)  RC(10,7) RC(11,7) RC(12,7) RC(13,7)    RC(4,5) RC(3,5) RC(2,5) RC(1,5) RC(0,5)
 
         // row 1                                        row 3
 	    RC(8,9)  RC(8,10) RC(8,11) RC(8,12) RC(8,13)    RC(6,0) RC(6,1) RC(6,2) RC(6,3) RC(6,4)
